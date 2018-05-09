@@ -12,6 +12,17 @@
       margin-bottom: 30px;
     }
 
+    #section {
+      text-align: center;
+      font-size: 50px;
+      color: #F59A9A;
+    }
+
+    #strategies {
+      font-size: 20px;
+      color: #103339;
+    }
+
     h4 {
       font-size: 19px;
       line-height: 1.375em;
@@ -20,12 +31,31 @@
       margin-bottom: 30px;
     }
 
+    #email {
+      color: white;
+    }
+
+    #resources {
+      font-size: 20px;
+    }
+
+    .body-text {
+      background-color: lightgrey;
+    }
+
     .jumbotron {
-      background-color: #f4511e;
+      height: 600px;
+      background-image: url("images/phoyo.jpeg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
     }
+
+    /*http://jsfiddle.net/jLGFp/3/*/
+
+
 
     .container-fluid {
       padding: 60px 50px;
@@ -130,37 +160,40 @@
     }
 
     .navbar {
-      margin-bottom: 0;
-      background-color: green;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
+      background-color: darkgreen;
+      font-size: 12px;
       letter-spacing: 4px;
-      border-radius: 0;
       font-family: Montserrat, sans-serif;
+      padding: 10px;
     }
 
     .navbar li a,
     .navbar .navbar-brand {
-      color: green;
+      color: pink;
     }
 
     .navbar-nav li a:hover,
     .navbar-nav li.active a {
-      color: green !important;
+      color: pink !important;
       background-color: green !important;
     }
 
     .navbar-default .navbar-toggle {
       border-color: transparent;
-      color: green !important;
+      color: pink !important;
+    }
+
+    .glyphicon,
+    .glyphicon-refresh {
+      color: black;
+      margin-bottom: 0px;
+      font-size: 40px;
     }
 
     footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+
     }
 
     .slideanim {
@@ -213,3 +246,4 @@
         font-size: 150px;
       }
     }
+    
