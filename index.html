@@ -3,7 +3,7 @@
 
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>SAT Prep</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,26 +13,21 @@
 
   <script>
     $(document).ready(function() {
-      // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
+
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
+
           event.preventDefault();
 
-          // Store hash
           var hash = this.hash;
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 900, function() {
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } // End if
+        }
       });
 
       $(window).scroll(function() {
@@ -46,6 +41,16 @@
         });
       });
     })
+  </script>
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(function() {
+      $('button').click(function() {
+        var email = $("#random").val();
+        alert("Please check your email shortly. Thank you for subscribing!");
+      });
+    });
   </script>
   <style>
     body {
@@ -81,15 +86,28 @@
       margin-bottom: 30px;
     }
 
- #portfolio{
+    #port-title {
+      font-size: 45px;
+      color: white;
+    }
+
+    #portfolio {
       background-image: url("images/graduating.jpeg");
-}
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+
     #resources {
       font-size: 20px;
     }
-#email {
-  padding:20px 20px;
-}
+
+    #email {
+      padding: 20px 20px;
+    }
+
     #prep {
       text-shadow: 1px 1px 2px black, 0 0 25px lightpink, 0 0 5px darkblue;
       color: black;
@@ -102,9 +120,8 @@
       font-size: 40px;
 
     }
-    #random {
-      
-    }
+
+    #random {}
 
     #about {
       text-align: center;
@@ -113,7 +130,7 @@
       background-color: #5C5949;
     }
 
-  
+
     #para {
       font-size: 25px;
       color: black;
@@ -122,7 +139,11 @@
     #sect {
       background-color: #9699B2;
     }
-
+#helpers {
+  color:darkgreen;
+  padding-down:70px;
+  font-size: 35px;
+}
     .body-text {
       background-color: lightgrey;
     }
@@ -194,7 +215,7 @@
       background-color: #f4511e;
     }
 
-    .test h4 {
+    .item h4 {
       font-size: 19px;
       line-height: 1.375em;
       font-weight: 400;
@@ -202,7 +223,7 @@
       margin: 70px 0;
     }
 
-    .test span {
+    .item span {
       font-style: normal;
     }
 
@@ -374,51 +395,51 @@
       <form>
         <div class="input-group">
           <input id="email" type="email" class="form-control" placeholder="Email Address" required style="width:800px; text-align:center; margin: 100px 250px;">
-          
-          <div style="text-align:center;"  class="input-group-btn">
-            
+
+          <div style="text-align:center;" class="input-group-btn">
+
             <button id="random" type="button" class="btn btn-danger" style="color:lightpink; padding:10px 20px;">Subscribe</button>
           </div>
         </div>
       </form>
     </div>
 
- <div class="container-fluid text-center">
-    <h2>What We Help with</h2>
-    <div class="row slideanim">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-sunglasses"></span>
-        <h4>Reading Skills</h4>
+    <div class="container-fluid text-center">
+      <h2>What We Help with</h2>
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-sunglasses"></span>
+          <h4>Reading Skills</h4>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-text-size"></span>
+          <h4>Writing Skills</h4>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-refresh"></span>
+          <h4>Math Skills</h4>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-text-size"></span>
-        <h4>Writing Skills</h4>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-refresh"></span>
-        <h4>Math Skills</h4>
-      </div>
-    </div>
-    <br><br>
+      <br><br>
 
-  </div>
+    </div>
 
     <!-- Container (About Section) -->
     <div id="about" class="container-fluid">
       <h2 id="about">About The SATs</h2><br>
       <p id="para">Taking the SATs is a helpful tool colleges use to determine if you are a good fit for there school. Although many may not agree with this system of acceptance, we must make the most out of it.</p>
-      <h4 id="random">Whether you are a Freshman or Junior, acing the SATs is the best way to succeed! Below are a few tips and guidelines to improve your overall grade. </h4><br>
+      <h4 id="random" style="font-size:30px; color:black">Whether you are a Freshman or Junior, acing the SATs is the best way to succeed! Below are a few tips and guidelines to improve your overall grade. </h4><br>
 
     </div>
   </div>
- 
+
 
   <div id="sect" class="container-fluid sec">
     <div class="row">
       <div class="col-sm-2">
         <span class="glyphicon glyphicon-globe logo slideanim"></span>
       </div>
-      <div class="col-lg-8">
+      <div class="col-sm-8">
         <h2 id="section">Reading Section</h2><br>
         <h4 id="strategies"><strong>Strategy 1: Switch It Up</strong>
           <p>If you realize you don’t have enough time to finish the passage or answer the question, here are a few tips:</p>
@@ -453,6 +474,9 @@
           </ul>
 
         </h4><br>
+        <div class="col-sm-2">
+          <span class="glyphicon glyphicon-pencil logo slideanim"></span>
+        </div>
         <h2 id="section">Writing Section</h2><br>
         <h4 id="strategies"><strong>Strategy 1: You MUST Practice Your Grammar Rules</strong>
           <ul>
@@ -479,7 +503,9 @@
             <li>The SAT loves tricking students using these answer choices, because it knows that students who don't know grammar rules won't see anything wrong with the sentence. </li>
           </ul>
         </h4><br>
-
+        <div class="col-sm-2">
+          <span class="glyphicon glyphicon-signal logo slideanim"></span>
+        </div>
         <h2 id="section">Math- No Calculator Section</h2>
         <h4 id="strategies"><strong>Strategy 1: Understand Your Weakness</strong>
           <ul>
@@ -535,50 +561,40 @@
 
 
   <div id="portfolio" class="container-fluid text-center sec">
-    <h2>Portfolio</h2><br>
-    <h4>What we have created</h4>
+    <h2 id="port-title">Other Resources</h2><br>
     <div class="row text-center slideanim">
       <div class="col-sm-12">
         <div class="column">
           <iframe src="https://giphy.com/embed/7bXJ4tRBV9AkM" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
           <p><a href="https://giphy.com/gifs/best-gifs-movie-we-are-your-friends-7bXJ4tRBV9AkM"></a></p>
           <!--gif credits to: https://giphy.com/gifs/best-gifs-movie-we-are-your-friends-7bXJ4tRBV9AkM -->
+          
         </div>
       </div>
-    </div><br>
-
-    <h2>Other Resources</h2>
-    <p id="resources">It may all seem stressful till the day after, but you got this. Below are a few links for practice exams and guidelines:</p>
-
+      
+    </div>
     <div class="container">
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-
-        <ol class="carousel-indicators">
+        <ol  class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <div class="carousel-inner" role="listbox">
-          <div class="test active">
-            <h4><a href="https://collegereadiness.collegeboard.org/sat/practice/full-length-practice-tests"><br>Take Free Online Tests Throught the College Board!</a></h4>
-            <div class="carousel-caption">
-            </div>
+        <div class="carousel-inner">
+          <div id="helpers" class="item active">
+            <h4><a id="helpers" href="https://collegereadiness.collegeboard.org/sat/practice/full-length-practice-tests"><br>Take Free Online Tests Throught the College Board!</a></h4>
+
           </div>
-          <div class="test">
-            <h4><a href="https://www.4tests.com/sat-practice-test"><br>Additional Exam Description</a></h4>
-            <div class="carousel-caption">
-            </div>
+          <div class="item">
+            <h4><a id="helpers" href="https://www.4tests.com/sat-practice-test"><br>Additional Exam Description</a></h4>
+
           </div>
-          <div class="test">
-            <h4><a href="https://www.khanacademy.org/test-prep/sat/full-length-sat-1"><br>Take Free Online and Printable Tests Throught Khan Academy!</a></h4>
-            <div class="carousel-caption">
-            </div>
+          <div class="item">
+            <h4><a  id="helpers" href="https://www.khanacademy.org/test-prep/sat/full-length-sat-1"><br>Take Free Online and Printable Tests Throught Khan Academy!</a></h4>
+
           </div>
         </div>
-
-
-
         <div>
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -592,28 +608,13 @@
       </div>
 
 
-
-
       <!-- Container (Contact Section) -->
       <div id="contact" class="container-fluid sec">
-        <h2 class="text-center">CREDITS</h2>
-        <div class="row">
-          <div class="col-sm-5">
-           <h2><a href="https://giphy.com/gifs/best-gifs-movie-we-are-your-friends-7bXJ4tRBV9AkM">Gifs</a> </h2>
-           
-           <h2><a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice">Khan Academy</a> </h2>
+        <h2 style="font-size:35px; color: darkgreen;" class="text-center">CREDITS</h2>
+            <h2><a href="https://giphy.com/gifs/best-gifs-movie-we-are-your-friends-7bXJ4tRBV9AkM" style="font-size:25px; color: lightpink;">Gifs</a> </h2>
+
+            <h2><a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice" style="font-size:25px; color: lightpink;">Khan Academy</a> </h2>
           </div>
-        
-      
-      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script>
-    $(function(){
-       $('button').click(function(){
-         var email = $("#random").val();
-      alert("Please check your email shortly. Thank you for subscribing!");
-      });
-    });
-  </script>
 
 </body>
 
